@@ -22,4 +22,3 @@
 
 [![chotchachi's github stats](https://github-readme-stats.vercel.app/api?username=chotchachi&show_icons=true&show_icons=true&theme=buefy&count_private=true&cache_seconds=1800&line_height=24)](https://github.com/chotchachi)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chotchachi&show_icons=true&theme=buefy&layout=compact&cache_seconds=1800&langs_count=8)](https://github.com/chotchachi)
-[![chotchachi's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=chotchachi&layout=compact&bg_color=ffffff)](https://github.com/chotchachi)
