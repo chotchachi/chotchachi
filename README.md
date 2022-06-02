@@ -8,13 +8,15 @@
 
 ### Skills
 
-[![Kotlin](https://img.shields.io/badge/kotlin-%23FF5722.svg?&style=for-the-badge&logo=kotlin&logoColor=white)]
-[![Android](https://img.shields.io/badge/android-teal.svg?&style=for-the-badge&logo=android&logoColor=white")]
-[![Swift](https://img.shields.io/badge/swift-%23FFac45.svg?&style=for-the-badge&logo=swift&logoColor=white)]
-[![iOS](https://img.shields.io/badge/iOS-%23000000.svg?&style=for-the-badge&logo=ios&logoColor=white")]
-[![ReactiveX](https://img.shields.io/badge/reactiveX-%23E4405F.svg?&style=for-the-badge)]
+[![Kotlin](https://img.shields.io/badge/kotlin-%23FF5722.svg?&style=for-the-badge&logo=kotlin&logoColor=white)]()
+[![Android](https://img.shields.io/badge/android-teal.svg?&style=for-the-badge&logo=android&logoColor=white")]()
+[![Swift](https://img.shields.io/badge/swift-%23FFac45.svg?&style=for-the-badge&logo=swift&logoColor=white)]()
+[![iOS](https://img.shields.io/badge/iOS-%23000000.svg?&style=for-the-badge&logo=ios&logoColor=white")]()
+[![ReactiveX](https://img.shields.io/badge/reactiveX-%23E4405F.svg?&style=for-the-badge)]()
 
-### Github Stats: <a href="https://profile-summary-for-github.com/user/c">https://profile-summary-for-github.com/user/chotchachi</a>
+### Github Stats: 
+
+<a href="https://profile-summary-for-github.com/user/chotchachi">https://profile-summary-for-github.com/user/chotchachi</a>
 
 <p><img src="https://github-readme-streak-stats.herokuapp.com/?user=chotchachi" alt="chotchachi" /></p>
 
