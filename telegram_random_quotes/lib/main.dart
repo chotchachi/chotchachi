@@ -38,13 +38,11 @@ void main() async {
 
   var quote = quotes[Random().nextInt(quotes.length)];
 
-  Stream.fromIterable(chatIds).asyncExpand(
-        (chatId) => send(
-      simpleHttpClient: simpleHttpClient,
-      quote: quote,
-      chatId: chatId,
-      botToken: botToken,
-    ),
+  send(
+    simpleHttpClient: simpleHttpClient,
+    quote: quote,
+    chatId: chatIds.first,
+    botToken: botToken,
   );
 
   simpleHttpClient.close();
