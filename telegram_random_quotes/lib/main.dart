@@ -38,12 +38,18 @@ void main() async {
 
   var quote = quotes[Random().nextInt(quotes.length)];
 
-  send(
-    simpleHttpClient: simpleHttpClient,
-    quote: quote,
-    chatId: chatIds.first,
-    botToken: botToken,
-  );
+  await Stream.value(quote)
+      .exhaustMap(
+        (quote) => Stream.fromIterable(chatIds).asyncExpand(
+          (chatId) => send(
+            simpleHttpClient: simpleHttpClient,
+            quote: quote,
+            chatId: chatId,
+            botToken: botToken,
+          ),
+        ),
+      )
+      .forEach((_) {});
 
   simpleHttpClient.close();
 }
@@ -77,6 +83,8 @@ Single<void> send({
           'parse_mode': 'Markdown',
         },
       );
+
+      print(quote);
 
       return simpleHttpClient.getJson(
         uri,
