@@ -11,49 +11,49 @@ void main() async {
   
   print(chatIds);
 
-  if (chatIds == null ||
-      chatIds.isEmpty ||
-      botToken == null ||
-      botToken.isEmpty) {
-    print(
-        'TELEGRAM_CHAT_IDS or TELEGRAM_BOT_TOKEN environment variable is not set');
-    exit(1);
-  }
+//   if (chatIds == null ||
+//       chatIds.isEmpty ||
+//       botToken == null ||
+//       botToken.isEmpty) {
+//     print(
+//         'TELEGRAM_CHAT_IDS or TELEGRAM_BOT_TOKEN environment variable is not set');
+//     exit(1);
+//   }
 
-  final loggingInterceptor = SimpleLoggingInterceptor(
-    SimpleLogger(
-      loggerFunction: print,
-      level: SimpleLogLevel.none,
-    ),
-  );
+//   final loggingInterceptor = SimpleLoggingInterceptor(
+//     SimpleLogger(
+//       loggerFunction: print,
+//       level: SimpleLogLevel.none,
+//     ),
+//   );
 
-  final simpleHttpClient = SimpleHttpClient(
-    client: http.Client(),
-    timeout: const Duration(seconds: 20),
-    requestInterceptors: [
-      loggingInterceptor.requestInterceptor,
-    ],
-    responseInterceptors: [
-      loggingInterceptor.responseInterceptor,
-    ],
-  );
+//   final simpleHttpClient = SimpleHttpClient(
+//     client: http.Client(),
+//     timeout: const Duration(seconds: 20),
+//     requestInterceptors: [
+//       loggingInterceptor.requestInterceptor,
+//     ],
+//     responseInterceptors: [
+//       loggingInterceptor.responseInterceptor,
+//     ],
+//   );
 
-  var quote = quotes[Random().nextInt(quotes.length)];
+//   var quote = quotes[Random().nextInt(quotes.length)];
 
-  await Stream.value(quote)
-      .exhaustMap(
-        (quote) => Stream.fromIterable(chatIds).asyncExpand(
-          (chatId) => send(
-            simpleHttpClient: simpleHttpClient,
-            quote: quote,
-            chatId: chatId,
-            botToken: botToken,
-          ),
-        ),
-      )
-      .forEach((_) {});
+//   await Stream.value(quote)
+//       .exhaustMap(
+//         (quote) => Stream.fromIterable(chatIds).asyncExpand(
+//           (chatId) => send(
+//             simpleHttpClient: simpleHttpClient,
+//             quote: quote,
+//             chatId: chatId,
+//             botToken: botToken,
+//           ),
+//         ),
+//       )
+//       .forEach((_) {});
 
-  simpleHttpClient.close();
+//   simpleHttpClient.close();
 }
 
 // Single<Quote> getQuote(SimpleHttpClient simpleHttpClient) =>
