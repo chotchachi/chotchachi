@@ -8,6 +8,8 @@ import 'package:rxdart_ext/rxdart_ext.dart';
 void main() async {
   final chatIds = Platform.environment['TELEGRAM_CHAT_IDS']?.split(',');
   final botToken = Platform.environment['TELEGRAM_BOT_TOKEN'];
+  
+  print(chatIds);
 
   if (chatIds == null ||
       chatIds.isEmpty ||
